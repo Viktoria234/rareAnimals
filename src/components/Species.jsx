@@ -27,7 +27,7 @@ const Species = ({filteredData, handleShowDesc, handleEdit}) => {
            <div className="species">
                 {filteredData.map((d) => (
                     <div className="specie" key={d.id}>
-                        <img alt={d.name} src={d.image}/>
+                        <img alt={d.name} src={d.image} loading="lazy"/>
                         <div className="text">
                             <p>{d.name}</p>
                             <p>Категория опасности вида: {d.category}</p>
